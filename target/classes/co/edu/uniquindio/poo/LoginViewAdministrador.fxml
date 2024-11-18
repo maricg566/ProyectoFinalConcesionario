@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.LoginAdministradorViewController">
+   <children>
+      <Label layoutX="92.0" layoutY="36.0" text="Iniciar Sesion Administrador" textFill="#3a41cd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="99.0" text="Usuario">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="188.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnIniciarSesionAdministrador" layoutX="62.0" layoutY="325.0" mnemonicParsing="false" onAction="#IniciarSesionActionAdministrador" text="INICIAR SESION" />
+      <Button fx:id="btnCambiarEmpleado" layoutX="233.0" layoutY="325.0" mnemonicParsing="false" onAction="#CambiarEmpleadoAction" text="SOY EMPLEADO" />
+      <Separator layoutX="59.0" layoutY="63.0" prefHeight="4.0" prefWidth="312.0" />
+      <TextField fx:id="txtUsuarioAdministrador" layoutX="74.0" layoutY="131.0" />
+      <PasswordField fx:id="txtContrasenaAdministrador" layoutX="74.0" layoutY="216.0" />
+   </children>
+</AnchorPane>

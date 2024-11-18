@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.GestionClientesViewController">
+   <children>
+      <Label layoutX="249.0" layoutY="29.0" text="Gestion de Clientes" textFill="#0010ee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="96.0" layoutY="56.0" prefHeight="27.0" prefWidth="469.0" />
+      <Label layoutX="427.0" layoutY="95.0" text="Cedula" />
+      <Label layoutX="87.0" layoutY="95.0" text="Nombre" />
+      <TextField fx:id="txtNombreCliente" layoutX="88.0" layoutY="125.0" />
+      <TextField fx:id="txtCedulaCliente" layoutX="427.0" layoutY="125.0" />
+      <TableView fx:id="tblListClientes" layoutX="142.0" layoutY="327.0" prefHeight="249.0" prefWidth="383.0">
+         <columns>
+            <TableColumn fx:id="tbcNombre" prefWidth="177.0" text="Nombre" />
+            <TableColumn fx:id="tbcCedula" prefWidth="205.0" text="Cedula" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEliminarCliente" layoutX="450.0" layoutY="600.0" mnemonicParsing="false" onAction="#onEliminarCliente" text="Eliminar" />
+      <Button fx:id="btnLimpiar" layoutX="147.0" layoutY="600.0" mnemonicParsing="false" onAction="#onLimpiar" text="Limpiar" />
+      <Button fx:id="btnActualizarCliente" layoutX="427.0" layoutY="288.0" mnemonicParsing="false" onAction="#onActualizarCliente" text="Actualizar Compra" />
+      <Button fx:id="btnAgregarCliente" layoutX="98.0" layoutY="288.0" mnemonicParsing="false" onAction="#onAgregarCliente" text="Agregar Compra" />
+      <Button fx:id="btnVolver" layoutX="582.0" layoutY="600.0" mnemonicParsing="false" onAction="#onVolverAction" text="Volver" />
+   </children>
+</AnchorPane>

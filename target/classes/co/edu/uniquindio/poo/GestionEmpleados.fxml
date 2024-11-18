@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.GestionEmpleadosViewController">
+   <children>
+      <Label layoutX="249.0" layoutY="29.0" text="Gestion de Empleados" textFill="#0010ee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="96.0" layoutY="56.0" prefHeight="27.0" prefWidth="469.0" />
+      <Label layoutX="427.0" layoutY="95.0" text="Cedula" />
+      <Label layoutX="87.0" layoutY="95.0" text="Nombre" />
+      <TextField fx:id="txtNombreEmpleado" layoutX="88.0" layoutY="125.0" />
+      <TextField fx:id="txtCedulaEmpleado" layoutX="427.0" layoutY="125.0" />
+      <TableView fx:id="tblListEmpleados" layoutX="70.0" layoutY="432.0" prefHeight="249.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="tbcNombre" prefWidth="161.0" text="Nombre" />
+            <TableColumn fx:id="tbcCedula" prefWidth="116.0" text="Cedula" />
+            <TableColumn fx:id="tbcUsuario" prefWidth="98.0" text="Usuario" />
+            <TableColumn fx:id="tbcContrasena" prefWidth="93.0" text="Contrasena" />
+            <TableColumn fx:id="tbcSueldo" prefWidth="82.0" text="Sueldo" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEliminarEmpleado" layoutX="447.0" layoutY="704.0" mnemonicParsing="false" onAction="#onEliminarEmpleado" text="Eliminar" />
+      <Button fx:id="btnLimpiar" layoutX="144.0" layoutY="704.0" mnemonicParsing="false" onAction="#onLimpiar" text="Limpiar" />
+      <Button fx:id="btnActualizarEmpleado" layoutX="427.0" layoutY="374.0" mnemonicParsing="false" onAction="#onActualizarEmpleado" text="Actualizar Empleado" />
+      <Button fx:id="btnAgregarEmpleado" layoutX="98.0" layoutY="374.0" mnemonicParsing="false" onAction="#onAgregarEmpleado" text="Agregar Empleado" />
+      <Label layoutX="89.0" layoutY="181.0" text="Usuario" />
+      <Label layoutX="427.0" layoutY="181.0" text="Contraseña" />
+      <Label layoutX="427.0" layoutY="277.0" text="Sueldo" />
+      <TextField fx:id="txtUsuarioEmpleado" layoutX="85.0" layoutY="210.0" />
+      <TextField fx:id="txtContrasenaEmpleado" layoutX="429.0" layoutY="210.0" />
+      <TextField fx:id="txtSueldoEmpleado" layoutX="429.0" layoutY="307.0" />
+      <Button fx:id="btnVolver" layoutX="574.0" layoutY="704.0" mnemonicParsing="false" onAction="#onVolverAction" text="Volver" />
+   </children>
+</AnchorPane>

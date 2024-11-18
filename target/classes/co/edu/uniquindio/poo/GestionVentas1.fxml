@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.GestionVentasViewController">
+   <children>
+      <Label layoutX="254.0" layoutY="29.0" text="Gestion de Ventas" textFill="#0010ee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="96.0" layoutY="56.0" prefHeight="27.0" prefWidth="469.0" />
+      <ChoiceBox fx:id="ClienteChoiceBox" layoutX="87.0" layoutY="206.0" prefWidth="150.0" />
+      <Label layoutX="87.0" layoutY="177.0" text="Seleccione el Cliente" />
+      <Label layoutX="427.0" layoutY="95.0" text="Precio Venta" />
+      <Label layoutX="87.0" layoutY="95.0" text="ID del Venta" />
+      <TextField fx:id="txtIdVenta" layoutX="88.0" layoutY="125.0" />
+      <TextField fx:id="txtPrecioVenta" layoutX="427.0" layoutY="125.0" />
+      <TableView fx:id="tblListVentas" layoutX="195.0" layoutY="334.0" prefHeight="249.0" prefWidth="276.0">
+         <columns>
+            <TableColumn fx:id="tbcId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tbcCliente" prefWidth="75.0" text="Cliente" />
+            <TableColumn fx:id="tbcPrecioVenta" prefWidth="125.0" text="Precio Venta" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEliminarVenta" layoutX="450.0" layoutY="600.0" mnemonicParsing="false" onAction="#onEliminarVenta" text="Eliminar" />
+      <Button fx:id="btnLimpiar" layoutX="147.0" layoutY="600.0" mnemonicParsing="false" onAction="#onLimpiar" text="Limpiar" />
+      <Button fx:id="btnActualizarVenta" layoutX="427.0" layoutY="288.0" mnemonicParsing="false" onAction="#onActualizarVenta" text="Actualizar Venta" />
+      <Button fx:id="btnAgregarVenta" layoutX="98.0" layoutY="288.0" mnemonicParsing="false" onAction="#onAgregarVenta" text="Agregar Venta" />
+      <Button fx:id="btnVolver" layoutX="582.0" layoutY="600.0" mnemonicParsing="false" onAction="#onVolverAction" text="Volver" />
+   </children>
+</AnchorPane>

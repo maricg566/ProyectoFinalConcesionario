@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.GestionCamionHibridoViewController">
+   <children>
+      <Label layoutX="395.0" layoutY="25.0" text="Registrar Camion Hibrido">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="81.0" text="TipoTransimision" />
+      <Label layoutX="86.0" layoutY="135.0" text="Marca" />
+      <Label layoutX="89.0" layoutY="190.0" text="Placa" />
+      <Label layoutX="84.0" layoutY="246.0" text="Nuevo" />
+      <Label layoutX="422.0" layoutY="79.0" text="Numero Cambios" />
+      <Label layoutX="422.0" layoutY="133.0" text="VelocidadMaxima" />
+      <Label layoutX="420.0" layoutY="188.0" text="Cilindraje" />
+      <Label layoutX="422.0" layoutY="246.0" text="Numero Pasajeros" />
+      <Label layoutX="757.0" layoutY="79.0" text="Numero Puertas" />
+      <Label layoutX="758.0" layoutY="135.0" text="AireAcondicionado" />
+      <Label layoutX="755.0" layoutY="246.0" text="Hibrido Ligero" />
+      <Label layoutX="757.0" layoutY="190.0" text="Enchufable" />
+      <TableView fx:id="tblListVehiculos" layoutX="37.0" layoutY="409.0" prefHeight="179.0" prefWidth="913.0">
+         <columns>
+            <TableColumn fx:id="tbcTipoVehiculo" prefWidth="129.0" text="Tipo de Vehiculo" />
+            <TableColumn fx:id="tbcTipoCombustible" minWidth="0.0" prefWidth="156.0" text="Tipo de Combustible" />
+            <TableColumn fx:id="tbcTransmision" prefWidth="129.0" text="Tipo Transmision" />
+            <TableColumn fx:id="tbcMarca" minWidth="8.0" text="Marca" />
+            <TableColumn fx:id="tbcPlaca" prefWidth="76.0" text="Placa" />
+            <TableColumn fx:id="tbcNuevo" text="Nuevo" />
+            <TableColumn fx:id="tbcCambios" prefWidth="71.0" text="Cambios" />
+            <TableColumn fx:id="tbcVelocidadMaxima" prefWidth="85.0" text="V. Maxima" />
+            <TableColumn fx:id="tbcCilindraje" prefWidth="106.0" text="Cilindraje" />
+         </columns>
+      </TableView>
+      <ChoiceBox fx:id="TipoTransmisionChoiceBox" layoutX="84.0" layoutY="102.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="NuevoChoiceBox" layoutX="84.0" layoutY="267.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="AireAcondicionadoChoiseBox" layoutX="758.0" layoutY="157.0" prefWidth="150.0" />
+      <TextField fx:id="txtMarca" layoutX="84.0" layoutY="157.0" />
+      <TextField fx:id="txtPlaca" layoutX="84.0" layoutY="215.0" />
+      <TextField fx:id="txtNumeroPasajeros" layoutX="420.0" layoutY="267.0" />
+      <TextField fx:id="txtCilindraje" layoutX="420.0" layoutY="215.0" />
+      <TextField fx:id="txtVelocidadMaxima" layoutX="420.0" layoutY="157.0" />
+      <TextField fx:id="txtNumeroCambio" layoutX="420.0" layoutY="102.0" />
+      <TextField fx:id="txtNumeroPuertas" layoutX="757.0" layoutY="102.0" />
+      <Button fx:id="btnAgregarVehiculo" layoutX="210.0" layoutY="368.0" mnemonicParsing="false" onAction="#onAgregarVehiculoAction" text="Agregar Vehiculo" />
+      <Button fx:id="btnActualizarVehiculo" layoutX="667.0" layoutY="368.0" mnemonicParsing="false" onAction="#onActualizarVehiculoAction" text="Actualizar Vehiculo" />
+      <Button fx:id="btnLimpiar" layoutX="227.0" layoutY="609.0" mnemonicParsing="false" onAction="#onLimpiar" text="Limpiar" />
+      <Button fx:id="btnEliminarVehiculo" layoutX="727.0" layoutY="609.0" mnemonicParsing="false" onAction="#onEliminarVehiculoAction" text="Eliminar" />
+      <Button fx:id="btnVolver" layoutX="888.0" layoutY="664.0" mnemonicParsing="false" onAction="#onVolerAction" text="Volver" />
+      <TextField fx:id="txtNumeroEjes" layoutX="84.0" layoutY="319.0" />
+      <TextField fx:id="txtTipoCamion" layoutX="419.0" layoutY="319.0" />
+      <Label layoutX="419.0" layoutY="298.0" text="Tipo Camion" />
+      <Label layoutX="86.0" layoutY="298.0" text="Numero Ejes" />
+      <ChoiceBox fx:id="EnchufableChoiseBox" layoutX="755.0" layoutY="209.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="HibridoLigeroChoiseBox" layoutX="755.0" layoutY="267.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="FrenosAireChoiseBox" layoutX="755.0" layoutY="319.0" prefWidth="150.0" />
+      <Label layoutX="755.0" layoutY="298.0" text="Frenos Aire" />
+   </children>
+</AnchorPane>
